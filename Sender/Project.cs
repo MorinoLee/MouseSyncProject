@@ -23,7 +23,6 @@ namespace MouseSyncProject.Sender
                 var pos = System.Windows.Forms.Cursor.Position;
                 var evt = new MouseEvent { X = pos.X, Y = pos.Y };
 
-                // Serialize the MouseEvent object using System.Text.Json
                 var json = JsonSerializer.Serialize(evt);
                 var data = Encoding.UTF8.GetBytes(json);
 

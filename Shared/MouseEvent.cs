@@ -8,12 +8,12 @@ namespace MouseSyncProject.Shared
 {
     internal class MouseEvent
     {
-        public int X;
+        public int X { get; set; }
 
-        public int Y;
+        public int Y { get; set; }
 
-        public bool LeftClick;
+        public bool LeftClick { get; set; }
 
-        public bool RightClick;
+        public bool RightClick { get; set; }
     }
 }

@@ -26,7 +26,7 @@ namespace MouseSyncProject.Receiver
             {
                 var data = listener.Receive(ref ep);
                 using var ms = new MemoryStream(data);
-                var evt = JsonSerializer.Deserialize<MouseEvent>(ms); // Replace BinaryFormatter with JsonSerializer
+                var evt = JsonSerializer.Deserialize<MouseEvent>(ms);
 
                 if (evt != null)
                 {

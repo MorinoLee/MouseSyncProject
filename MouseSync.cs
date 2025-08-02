@@ -12,8 +12,8 @@ namespace MouseSyncProject
             SenderProgram sender = new SenderProgram();
             sender.RunSender();
 
-            ReceiverProgram receiver = new ReceiverProgram();
-            receiver.RunReceiver();
+            //ReceiverProgram receiver = new ReceiverProgram();
+            //receiver.RunReceiver();
 
         }
     }
